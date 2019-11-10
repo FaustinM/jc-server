@@ -60,7 +60,7 @@ const schema = {
       default: '',
       minLength: 1,
       maxLength: 5000,
-      examples: ['comment message'],
+      examples: ['comments message'],
     },
     website: {
       $id: '/properties/website',

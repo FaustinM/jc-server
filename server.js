@@ -1,8 +1,9 @@
 'use strict';
 
 const express = require('express');
-const cors = require('cors');
+const morgan = require('morgan');
 const uuid = require('uuid');
+const cors = require('cors');
 const url = require('url');
 
 const { validateComment } = require('./validation');
@@ -13,8 +14,9 @@ const config = require('./config');
 const app = express();
 const port = config.port;
 
-app.use(cors());
 app.use(express.json());
+if(config.dev) app.use(morgan("dev"));
+if(config.dev) app.use(cors());
 
 async function getComments(req) {
   const pageId = req.query.pageId;

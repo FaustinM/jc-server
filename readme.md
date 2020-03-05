@@ -1,13 +1,9 @@
-<h1 align="center">
-  JustComments Server
-</h1>
-<p align="center">
-  <a href="https://just-comments.com/demo.html"> <img src="https://just-comments.com/assets/demo4.png" alt="JustComments demo"> </a>
-</p>
-<p align="center">
-  Basic open-source implementation of a server for JustComments
-</p>
+![Imgur](https://i.imgur.com/LVUFnS1.png)
 
+# Serveur Just-Comment
+Afin de convenir à mes besoins, j'ai décidé de fork le projet et de le modifier ! Notamment en ajoutant un système de modération et autre.
+
+# Original
 The server is implemented in NodeJS. Required version is 8+;
 
 ## Features

@@ -36,7 +36,7 @@ To have these features, please see the paid hosted version:
 - Run `node server.js`
 
 You should get a message `JustComments listening on port 3434!`. You can change
-the port in `config.js`.
+the port in `config.json`.
 
 ## Frontend Setup
 

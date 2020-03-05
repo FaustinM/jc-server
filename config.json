@@ -1,0 +1,28 @@
+{
+  "port": 3434,
+  "dev": true,
+  "adminApi": "http://localhost:2368/ghost/api/canary/admin/users/me/?include=roles",
+  "role" : [
+    {
+      "name": "Owner",
+      "god": true,
+      "antiban": true
+    },
+    {
+      "name" : "Moderator",
+      "permission" : [
+        "certif", "remove", "ban"
+      ],
+      "antiban": true
+    },
+    {
+      "name" : "certification",
+      "permission" : ["certif"],
+      "antiban": true
+    },
+    {
+      "name" : "nothing",
+      "permission" : []
+    }
+  ]
+}

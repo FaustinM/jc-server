@@ -103,6 +103,17 @@ ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'));
 
 const validateComment = ajv.compile(schema);
 
+function validateJSON(file){
+  try {
+    JSON.parse(require('fs').readFileSync(file, 'utf8'));
+    return true
+  }
+  catch (exception) {
+    return false
+  }
+}
+
 module.exports = {
   validateComment,
+  validateJSON
 };
